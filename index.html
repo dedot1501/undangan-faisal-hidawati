@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faisal &amp; Hidawati — The Wedding</title>
+    <meta
+      name="description"
+      content="Undangan pernikahan Faisal & Hidawati, 20 November 2026."
+    />
+    <meta name="theme-color" content="#faf6ef" />
+
+    <!-- Open Graph — Preview WhatsApp -->
+    <meta property="og:title" content="Faisal &amp; Hidawati — The Wedding" />
+    <meta
+      property="og:description"
+      content="Kami mengundang Anda untuk berbagi kebahagiaan di hari pernikahan kami."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="is-locked">
+    <!-- ================= COVER ================= -->
+    <section class="cover" id="cover">
+      <div class="cover__bg"></div>
+      <div class="cover__overlay"></div>
+
+      <div class="cover__content">
+        <p class="eyebrow">The Wedding Of</p>
+        <h1 class="cover__names">Faisal <span>&amp;</span> Hidawati</h1>
+        <p class="cover__date">Jum'at, 20 November 2026</p>
+
+        <div class="cover__guest">
+          <p>Kepada Bapak/Ibu/Saudara/i</p>
+          <strong id="guestName">Tamu Undangan</strong>
+        </div>
+
+        <button class="btn btn--light" id="openBtn" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2 2 7l10 5 10-5-10-5Zm0 9L2 6v11l10 5 10-5V6l-10 5Z"
+            />
+          </svg>
+          Buka Undangan
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="app" id="app" aria-hidden="true">
+      <!-- QUOTE -->
+      <section class="section section--quote reveal">
+        <p class="quote__arabic">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+          لِّتَسْكُنُوا إِلَيْهَا
+        </p>
+        <blockquote class="quote__text">
+          "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+          pasangan hidup dari jenismu sendiri, supaya kamu dapat ketenangan hati
+          dan menjadikan kasih sayang di antara kamu."
+        </blockquote>
+        <p class="quote__source">— QS. Ar-Rum: 21</p>
+      </section>
+
+      <!-- MEMPELAI -->
+      <section class="section section--couple">
+        <header class="section__head reveal">
+          <p class="eyebrow">Bride &amp; Groom</p>
+          <h2 class="section__title">Mempelai</h2>
+        </header>
+
+        <div class="couple">
+          <article class="couple__card reveal">
+            <div class="couple__photo">
+              <!-- Disarankan ganti nama file tanpa simbol & -->
+              <img
+                src="assets/img/fropil_lk_&_Pr.jpeg"
+                alt="M. Faisal Khaeri"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="couple__name">M. Faisal Khaeri</h3>
+            <p class="couple__desc">
+              Putra dari<br />Bpk. Khairuddin &amp; Ibu Khairuddin
+            </p>
+          </article>
+
+          <div class="couple__amp reveal">&amp;</div>
+
+          <article class="couple__card reveal">
+            <div class="couple__photo">
+              <!-- Disarankan ganti nama file tanpa simbol & -->
+              <img
+                src="assets/img/tambahan04.jpeg"
+                alt="Foto Hidawati"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="couple__name">Hidawati</h3>
+            <p class="couple__desc">
+              Putri dari<br />Bpk. Halidi &amp; Ibu Nuraini
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section class="section section--countdown reveal">
+        <p class="eyebrow">Save The Date</p>
+        <h2 class="section__title">Menuju Hari Bahagia</h2>
+
+        <div class="countdown" id="countdown">
+          <div class="countdown__item">
+            <span id="cd-days">00</span><small>Hari</small>
+          </div>
+          <div class="countdown__item">
+            <span id="cd-hours">00</span><small>Jam</small>
+          </div>
+          <div class="countdown__item">
+            <span id="cd-mins">00</span><small>Menit</small>
+          </div>
+          <div class="countdown__item">
+            <span id="cd-secs">00</span><small>Detik</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACARA (Hanya Akad) -->
+      <section class="section section--events">
+        <header class="section__head reveal">
+          <p class="eyebrow">The Celebration</p>
+          <h2 class="section__title">Detail Acara</h2>
+        </header>
+
+        <div class="events">
+          <article class="event-card reveal">
+            <p class="event-card__tag">Akad Nikah</p>
+            <p class="event-card__date">Jum'at, 20 November 2026</p>
+            <p class="event-card__time">12.00 — 14.00 WIB</p>
+            <!-- Teks lokasi disesuaikan -->
+            <p class="event-card__place">
+              Masjid Hidayatul Islam<br />Dasan Pancor
+            </p>
+          </article>
+        </div>
+
+        <div class="section__action reveal">
+          <!-- Link Kalender disesuaikan lokasinya -->
+          <a
+            class="btn btn--outline"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Akad%20Nikah%20Faisal%20%26%20Hidawati&dates=20261120T050000Z/20261120T070000Z&location=Masjid%20Hidayatul%20Islam%2C%20Dasan%20Pancor&details=Merupakan%20suatu%20kehormatan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20hadir."
+            target="_blank"
+            rel="noopener"
+          >
+            + Tambah ke Kalender
+          </a>
+        </div>
+      </section>
+
+      <!-- LOKASI -->
+      <section class="section section--location">
+        <header class="section__head reveal">
+          <p class="eyebrow">Location</p>
+          <h2 class="section__title">Lokasi Acara</h2>
+        </header>
+
+        <div class="location reveal">
+          <div class="location__map">
+            <!-- Iframe Google Maps baru -->
+            <iframe
+              title="Peta lokasi acara"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.246899287009!2d116.52405471109002!3d-8.668053788189681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4f456f9c26e1%3A0x76dc2251d1857e40!2sMasjid%20Hidayatul%20Islam%20Dasan%20Pancor%20Ling.%20Dasan%20Pancor!5e0!3m2!1sid!2sid!4v1794964513382!5m2!1sid!2sid"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="location__info">
+            <!-- Teks info lokasi baru -->
+            <h3>Masjid Hidayatul Islam</h3>
+            <p>
+              Dasan Pancor, Lingkungan Dasan Pancor<br />Kabupaten Lombok Timur,
+              NTB
+            </p>
+            <!-- Link Google Maps baru -->
+            <a
+              class="btn btn--outline"
+              href="https://maps.app.goo.gl/q3fF1docs8WyJWNy8"
+              target="_blank"
+              rel="noopener"
+            >
+              Buka di Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section class="section section--rsvp">
+        <header class="section__head reveal">
+          <p class="eyebrow">RSVP</p>
+          <h2 class="section__title">Konfirmasi Kehadiran</h2>
+          <p class="section__sub">
+            Mohon konfirmasi kehadiran Anda sebelum 13 November 2026.
+          </p>
+        </header>
+
+        <form class="rsvp-form reveal" id="rsvpForm" novalidate>
+          <!-- Honeypot anti-bot -->
+          <input
+            type="text"
+            name="hp"
+            id="hp"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+            style="
+              position: absolute;
+              left: -9999px;
+              width: 1px;
+              height: 1px;
+              opacity: 0;
+            "
+          />
+
+          <div class="field">
+            <label for="rsvpName">Nama Lengkap</label>
+            <input
+              type="text"
+              id="rsvpName"
+              name="name"
+              placeholder="Nama Anda"
+              maxlength="60"
+              required
+            />
+            <span class="field__error" data-error-for="rsvpName"></span>
+          </div>
+
+          <div class="field">
+            <label>Konfirmasi Kehadiran</label>
+            <div class="radio-group">
+              <label class="radio"
+                ><input
+                  type="radio"
+                  name="attendance"
+                  value="Hadir"
+                  required
+                /><span>Hadir</span></label
+              >
+              <label class="radio"
+                ><input
+                  type="radio"
+                  name="attendance"
+                  value="Tidak Hadir"
+                /><span>Tidak Hadir</span></label
+              >
+              <label class="radio"
+                ><input type="radio" name="attendance" value="Ragu-ragu" /><span
+                  >Ragu-ragu</span
+                ></label
+              >
+            </div>
+            <span class="field__error" data-error-for="attendance"></span>
+          </div>
+
+          <div class="field">
+            <label for="rsvpGuests">Jumlah Tamu</label>
+            <select id="rsvpGuests" name="guests">
+              <option value="1">1 Orang</option>
+              <option value="2">2 Orang</option>
+              <option value="3">3 Orang</option>
+              <option value="4">4 Orang</option>
+              <option value="5">5 Orang</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="rsvpMessage"
+              >Ucapan &amp; Doa <span class="hint">(opsional)</span></label
+            >
+            <textarea
+              id="rsvpMessage"
+              name="message"
+              rows="4"
+              maxlength="300"
+              placeholder="Tulis ucapan dan doa Anda..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--full">Kirim Konfirmasi</button>
+          <p
+            class="form-note"
+            id="formNote"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+
+      <!-- GUEST BOOK -->
+      <section class="section section--wishes">
+        <header class="section__head reveal">
+          <p class="eyebrow">Guest Book</p>
+          <h2 class="section__title">Ucapan &amp; Doa</h2>
+          <p class="section__sub" id="wishesCount">— ucapan</p>
+        </header>
+
+        <div class="wishes" id="wishesList"></div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="footer__thanks">Terima kasih atas doa dan kehadirannya.</p>
+        <p class="footer__names">Faisal &amp; Hidawati</p>
+        <p class="footer__small">Made with ♥ · 2026</p>
+      </footer>
+    </main>
+
+    <!-- MUSIC -->
+    <button
+      class="music-btn"
+      id="musicBtn"
+      aria-label="Putar musik"
+      title="Musik"
+    >
+      <span class="music-btn__disc"></span>
+    </button>
+    <audio id="bgMusic" loop preload="none">
+      <source src="assets/music/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
